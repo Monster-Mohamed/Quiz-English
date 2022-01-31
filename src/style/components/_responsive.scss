@@ -1,0 +1,77 @@
+@media (max-width: 670px) {
+  .msg {
+    padding: 10px !important;
+    flex-wrap: wrap;
+
+    img {
+      margin: 10px auto;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .bullets {
+    flex-direction: column;
+
+    div {
+      margin-top: 20px;
+    }
+  }
+  h1 {
+    font-size: 35px !important;
+  }
+
+  .levels {
+    padding: 35px !important;
+  }
+
+  .parent-center {
+    width: 90% !important;
+  }
+
+  label {
+    max-width: 250px !important;
+    word-break: break-word;
+  }
+
+  .msg {
+    padding: 10px !important;
+    flex-wrap: wrap;
+
+    img {
+      margin: 10px auto;
+    }
+  }
+
+  .count {
+    padding: 0;
+    flex: 4 !important;
+  }
+}
+
+@media (max-width: 280px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .quiz-info {
+    flex-direction: column;
+
+    * {
+      text-align: left !important;
+      margin-top: 20px;
+    }
+  }
+  .parent-center {
+    width: 100%;
+  }
+  .custom_radio {
+    margin: 20px 0;
+    font-size: 13px;
+    padding: 5px;
+
+    label {
+      width: 100%;
+    }
+  }
+}
