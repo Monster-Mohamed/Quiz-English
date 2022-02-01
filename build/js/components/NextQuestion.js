@@ -1,8 +1,12 @@
-import { curr, increaseCurrPageBy1, Level, questionsCount } from "../pages/Levels.js";
+import { curr, increaseCurrPageBy1, Level, questionsCount, resetAllVariables } from "../pages/Levels.js";
 import AddQuestions from "./AddQuestions.js";
 import RemoveAll from "./RemoveAll.js";
 import CountDown, { counter } from "./CountDown.js";
+import Home from "../pages/Home.js";
 export let rightAnswers = 0;
+export const resetRightAnswers = () => {
+    rightAnswers = 0;
+};
 const NextQuestion = (questions) => {
     const quizArea = document.querySelector(".quiz-area");
     const quizAnswers = document.querySelector(".custom_radio");
@@ -79,6 +83,8 @@ const NextQuestion = (questions) => {
         let results = "";
         if (curr === +questionsCount) {
             RemoveAll();
+            const result = Math.floor((rightAnswers / +questionsCount) * 100);
+            window.localStorage.setItem(`progress${Level}`, result.toString());
             if (rightAnswers > (+questionsCount / 2) && rightAnswers < +questionsCount) {
                 results =
                     `
@@ -137,7 +143,8 @@ const NextQuestion = (questions) => {
             `;
             const goHomeBtn = document.getElementById("goHome");
             goHomeBtn.addEventListener("click", () => {
-                window.location.reload();
+                resetAllVariables();
+                Home();
             });
         }
     };

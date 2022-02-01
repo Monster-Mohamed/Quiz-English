@@ -1,10 +1,14 @@
 import Question from "../interfaces/Question.js";
-import {curr, increaseCurrPageBy1, Level, questionsCount} from "../pages/Levels.js";
+import {curr, increaseCurrPageBy1, Level, questionsCount, resetAllVariables} from "../pages/Levels.js";
 import AddQuestions from "./AddQuestions.js";
 import RemoveAll from "./RemoveAll.js";
 import CountDown, {counter} from "./CountDown.js";
+import Home from "../pages/Home.js";
 
 export let rightAnswers = 0;
+export const resetRightAnswers = () => {
+    rightAnswers = 0;
+};
 const NextQuestion = (questions: Question[]) => {
     const quizArea = <HTMLElement>document.querySelector(".quiz-area");
     const quizAnswers = <HTMLElement>document.querySelector(".custom_radio");
@@ -88,6 +92,8 @@ const NextQuestion = (questions: Question[]) => {
         if (curr === +questionsCount) {
             RemoveAll();
 
+            const result = Math.floor((rightAnswers / +questionsCount) * 100);
+            window.localStorage.setItem(`progress${Level}`, result.toString());
             if (rightAnswers > (+questionsCount / 2) && rightAnswers < +questionsCount) {
                 results =
                     `
@@ -145,7 +151,8 @@ const NextQuestion = (questions: Question[]) => {
 
             const goHomeBtn = <HTMLButtonElement>document.getElementById("goHome");
             goHomeBtn.addEventListener("click", () => {
-                window.location.reload();
+                resetAllVariables();
+                Home();
             });
         }
     };

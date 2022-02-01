@@ -6,6 +6,15 @@
   padding: 15px;
   border-radius: 8px;
 
+  .exit {
+    margin-left: 15px;
+    color: $main_color;
+    border-bottom: 1px solid $main_color;
+    cursor: pointer;
+    width: max-content;
+    margin-bottom: 15px;
+  }
+
   .quiz-info {
     display: flex;
     background: #fff;

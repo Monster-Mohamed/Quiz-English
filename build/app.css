@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
   margin: 40px auto;
 }
 
@@ -46,10 +46,11 @@ input[data-correct] + label {
 .main-btn {
   position: relative;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   padding: 30px 61px;
+  background: rgba(186, 24, 27, 0.1);
+  font-size: 24px;
   border-radius: 4px;
-  color: #ba181b;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -58,6 +59,73 @@ input[data-correct] + label {
   filter: hue-rotate(0deg);
   border: 2px solid #ba181b;
   transition: all 0.1s linear;
+  color: #ba181b;
+  text-align: center;
+  align-items: center;
+}
+.main-btn .txt {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+.main-btn .box {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-btn .box .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.main-btn .box .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.main-btn .box .percent svg circle {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 10;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke-linecap: round;
+}
+.main-btn .box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+.main-btn .box .percent svg circle:nth-child(2) {
+  stroke: #ba181b;
+}
+.main-btn .box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+.main-btn .box .percent .number h2 {
+  font-size: 34px;
+}
+.main-btn .box .percent .number h2 p {
+  display: inline-block;
+  font-size: 24px;
+}
+.main-btn .box .text {
+  padding: 10px 0 0;
+  color: #999;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .main-btn:hover {
   border: 1px solid transparent;
@@ -197,6 +265,17 @@ input[data-correct] + label {
     transform: translateY(-0.1em);
   }
 }
+.reset-btn {
+  color: #ba181b;
+  width: max-content;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  border-bottom: 1px solid #ba181b;
+}
+
 .head1 {
   color: #ba181b;
   font-weight: 600;
@@ -292,6 +371,14 @@ input[data-correct] + label {
   width: 70%;
   padding: 15px;
   border-radius: 8px;
+}
+.quiz-parent .exit {
+  margin-left: 15px;
+  color: #ba181b;
+  border-bottom: 1px solid #ba181b;
+  cursor: pointer;
+  width: max-content;
+  margin-bottom: 15px;
 }
 .quiz-parent .quiz-info {
   display: flex;
@@ -402,13 +489,25 @@ html {
   scrollbar-color: #ba181b #3d4a59;
 }
 
-@media (max-width: 670px) {
+.completed {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 790px) {
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
   }
   .msg img {
     margin: 10px auto;
+  }
+
+  .parent-center {
+    width: 75% !important;
+  }
+  .parent-center .levels {
+    padding: 35px !important;
   }
 }
 @media (max-width: 550px) {
@@ -421,10 +520,6 @@ html {
 
   h1 {
     font-size: 35px !important;
-  }
-
-  .levels {
-    padding: 35px !important;
   }
 
   .parent-center {
@@ -449,9 +544,26 @@ html {
     flex: 4 !important;
   }
 }
+@media (max-width: 400px) {
+  .main-btn {
+    flex-direction: column;
+  }
+  .main-btn .box {
+    justify-content: center;
+    align-items: center;
+  }
+  .main-btn .txt {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 280px) {
   h1 {
     font-size: 20px;
+  }
+
+  .levels {
+    padding: 5px !important;
   }
 
   .quiz-info {
@@ -463,7 +575,11 @@ html {
   }
 
   .parent-center {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .levels {
+    margin: 20px 5px !important;
   }
 
   .custom_radio {

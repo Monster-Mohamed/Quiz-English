@@ -1,8 +1,13 @@
+import Home from "../pages/Home.js";
+import {curr, Level, questionsCount, resetAllVariables} from "../pages/Levels.js";
+import {rightAnswers} from "./NextQuestion.js";
+
 const QuizTemplate = (level: string) => {
     const dad = <HTMLElement>document.getElementById("root");
     dad.innerHTML =
         `
         <div class="quiz-parent parent-center">
+            <p class="exit">Exit Quiz</p>
             <div class="quiz-info">
                 <div class="level">Level: <span>${level}</span></div>
                 <div class="count">Questions: <span>10</span></div>
@@ -30,6 +35,21 @@ const QuizTemplate = (level: string) => {
             <div class="results"></div>
         </div>
         `;
+    const exitBtn = document.querySelector(".exit") as HTMLButtonElement;
+    exitBtn.addEventListener("click", () => {
+        if (curr >= 1) {
+            // to save the result
+            const result = ((rightAnswers / +questionsCount) * 100).toFixed(1);
+            window.localStorage.setItem(`progress${Level}`, result.toString());
+            // to reset variables
+            resetAllVariables();
+            console.log(rightAnswers);
+            // to add home page
+            Home();
+        } else {
+            alert("You can't exit at first question");
+        }
+    });
 };
 
 export default QuizTemplate;

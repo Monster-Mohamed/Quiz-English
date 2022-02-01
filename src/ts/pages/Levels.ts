@@ -1,7 +1,7 @@
 import createBullets from "../components/CreateBullets.js";
 import QuizTemplate from "../components/QuizTemplate.js";
 import AddQuestions from "../components/AddQuestions.js";
-import NextQuestion from "../components/NextQuestion.js";
+import NextQuestion, {resetRightAnswers} from "../components/NextQuestion.js";
 import CountDown from "../components/CountDown.js";
 
 export let questionsCount: string;
@@ -9,6 +9,13 @@ export let curr = 0;
 export let Level: string;
 export const increaseCurrPageBy1 = () => {
     ++curr;
+};
+
+export const resetAllVariables = () => {
+    questionsCount = "";
+    curr = 0;
+    Level = "";
+    resetRightAnswers();
 };
 const Levels = (level: string) => {
     // add quiz html template

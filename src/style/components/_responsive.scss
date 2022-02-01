@@ -1,10 +1,17 @@
-@media (max-width: 670px) {
+@media (max-width: 790px) {
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
 
     img {
       margin: 10px auto;
+    }
+  }
+  .parent-center {
+    width: 75% !important;
+
+    .levels {
+      padding: 35px !important;
     }
   }
 }
@@ -19,10 +26,6 @@
   }
   h1 {
     font-size: 35px !important;
-  }
-
-  .levels {
-    padding: 35px !important;
   }
 
   .parent-center {
@@ -49,9 +52,29 @@
   }
 }
 
+@media (max-width: 400px) {
+  .main-btn {
+    flex-direction: column;
+
+    .box {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .txt {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
 @media (max-width: 280px) {
   h1 {
     font-size: 20px;
+  }
+
+  .levels {
+    padding: 5px !important;
   }
 
   .quiz-info {
@@ -63,7 +86,11 @@
     }
   }
   .parent-center {
-    width: 100%;
+    width: 100% !important;
+  }
+
+  .levels {
+    margin: 20px 5px !important;
   }
   .custom_radio {
     margin: 20px 0;
