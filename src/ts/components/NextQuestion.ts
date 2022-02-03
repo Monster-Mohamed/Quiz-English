@@ -25,8 +25,11 @@ const NextQuestion = (questions: Question[]) => {
 
         // make countdown
         clearInterval(counter);
-        CountDown(120);
-
+        if (+Level > 1) {
+            CountDown(60);
+        } else {
+            CountDown(90);
+        }
         // show results
         showResults();
     });

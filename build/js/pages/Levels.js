@@ -2,7 +2,7 @@ import createBullets from "../components/CreateBullets.js";
 import QuizTemplate from "../components/QuizTemplate.js";
 import AddQuestions from "../components/AddQuestions.js";
 import NextQuestion, { resetRightAnswers } from "../components/NextQuestion.js";
-import CountDown from "../components/CountDown.js";
+import CountDown, { counter } from "../components/CountDown.js";
 export let questionsCount;
 export let curr = 0;
 export let Level;
@@ -29,7 +29,13 @@ const Levels = (level) => {
         // Add Questions Data
         AddQuestions(data[curr]);
         // Start Countdown
-        CountDown(120);
+        clearInterval(counter);
+        if (+Level > 1) {
+            CountDown(60);
+        }
+        else {
+            CountDown(90);
+        }
         // check right answer
         NextQuestion(data);
     });
