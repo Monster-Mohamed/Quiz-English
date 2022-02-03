@@ -494,7 +494,7 @@ html {
   height: 100px;
 }
 
-@media (max-width: 790px) {
+@media (max-width: 905px) {
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
@@ -510,7 +510,7 @@ html {
     padding: 35px !important;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 555px) {
   .bullets {
     flex-direction: column;
   }
@@ -544,7 +544,7 @@ html {
     flex: 4 !important;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .main-btn {
     flex-direction: column;
   }
@@ -557,7 +557,7 @@ html {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 280px) {
+@media (max-width: 285px) {
   h1 {
     font-size: 20px;
   }
