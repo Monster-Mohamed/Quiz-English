@@ -56,6 +56,10 @@
   .main-btn {
     flex-direction: column;
 
+    .questions-count {
+      font-size: 15px;
+    }
+
     .box {
       justify-content: center;
       align-items: center;
@@ -63,7 +67,7 @@
 
     .txt {
       text-align: center;
-      margin-bottom: 20px;
+      margin: 30px auto;
     }
   }
 }

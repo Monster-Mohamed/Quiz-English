@@ -1,24 +1,29 @@
 import Levels from "./Levels.js";
 
-const Home = () => {
+const Home = async () => {
     const dad = <HTMLElement>document.getElementById("root");
     let levels = "";
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
         const progress = window.localStorage.getItem(`progress${i}`);
         const check = !!progress;
-        levels +=
-            `
-            <div data-level="${i}" class="main-btn levels">
+        await fetch(`https://monster-quiz-english-default-rtdb.firebaseio.com/level${i}.json`)
+            .then(res => res.json())
+            .then(data => {
+                let count = data.length;
+                levels +=
+                    `
+            <div ${i === 5 && "data-disable='true'"} data-level="${i}" class="main-btn levels">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <p class="txt">Level ${i}</p>
+                <p class="questions-count">Questions: ${count}</p>
                 <div class="box">
                      ${
-                check && +progress === 100
-                    ? "<img alt='completed' class='completed' src='https://cdn-icons-png.flaticon.com/128/716/716225.png' >"
-                    : `
+                        check && +progress === 100
+                            ? "<img alt='completed' class='completed' src='../../images/checked.png' >"
+                            : `
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
@@ -31,10 +36,11 @@ const Home = () => {
                         </div>
                         `
 
-            }
+                    }
                 </div>
             </div>
             `;
+            });
     }
     dad.innerHTML = `
     <div class="parent-center">

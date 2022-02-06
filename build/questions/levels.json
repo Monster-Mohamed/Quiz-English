@@ -339,7 +339,7 @@
       "right_a": "No right answer"
     },
     {
-      "title": "____________________ shoes are black",
+      "title": "____________________ shoes here are black",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -347,7 +347,7 @@
       "right_a": "These"
     },
     {
-      "title": "____________________ shoes are gray",
+      "title": "____________________ shoes there are gray",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -355,7 +355,7 @@
       "right_a": "Those"
     },
     {
-      "title": "____________________ pen is small",
+      "title": "____________________ pen here is small",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -363,7 +363,7 @@
       "right_a": "This"
     },
     {
-      "title": "____________________ pen is very large",
+      "title": "____________________ pen there is very large",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -371,7 +371,7 @@
       "right_a": "That"
     },
     {
-      "title": "The time on ____________________ clock is 5:00",
+      "title": "The time on ____________________ clock over there is 5:00",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -379,7 +379,7 @@
       "right_a": "That"
     },
     {
-      "title": "The time on ____________________ clock is 11:50",
+      "title": "The time on ____________________ clock on my hand is 11:50",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -387,7 +387,7 @@
       "right_a": "This"
     },
     {
-      "title": "____________________ plane is a toy",
+      "title": "Look at ______ man over there! He's not wearing any clothes!",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
@@ -395,36 +395,76 @@
       "right_a": "That"
     },
     {
-      "title": "____________________ plane isn’t a toy",
+      "title": "Her new house cost over half a million pounds. ______ a lot of money.",
+      "a_1": "This's",
+      "a_2": "That's",
+      "a_3": "These're",
+      "a_4": "Those're",
+      "right_a": "That's"
+    },
+    {
+      "title": "Hello. ______ Patrick. Can I speak to Murray, please?",
+      "a_1": "This is",
+      "a_2": "That is",
+      "a_3": "These are",
+      "a_4": "Those are",
+      "right_a": "This is"
+    },
+    {
+      "title": "______ boots she is wearing look very expensive.",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
       "a_4": "Those",
-      "right_a": "This"
+      "right_a": "These"
     },
     {
-      "title": "____________________ cat is eating",
-      "a_1": "This",
-      "a_2": "That",
-      "a_3": "These",
-      "a_4": "Those",
-      "right_a": "This"
-    },
-    {
-      "title": "____________________ cat isn’t eating",
-      "a_1": "This",
-      "a_2": "That",
-      "a_3": "These",
-      "a_4": "Those",
-      "right_a": "That"
-    },
-    {
-      "title": "____________________ glasses are for reading",
+      "title": "My grandmother never wore trousers when she was young. In ______ days it wasn't acceptable.",
       "a_1": "This",
       "a_2": "That",
       "a_3": "These",
       "a_4": "Those",
       "right_a": "Those"
+    },
+    {
+      "title": "I'm going to London again ______ week-end. Do you want to come?",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "This"
+    },
+    {
+      "title": "Yes, let's go to the restaurant tonight. _______ a great idea.",
+      "a_1": "This is",
+      "a_2": "That is",
+      "a_3": "These are",
+      "a_4": "Those are",
+      "right_a": "That is"
+    },
+    {
+      "title": "What's the name of ______ song by Robbie Williams we heard yesterday?",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "That"
+    },
+    {
+      "title": "Oh, I love ______ pair of trousers. I'm going to buy myself a pair!",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "These"
+    },
+    {
+      "title": "Here we are. ______ where I live.",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "This"
     },
     {
       "title": "My friend is studying hard (Make these sentence plural)",
@@ -504,7 +544,7 @@
       "a_2": "trial",
       "a_3": "effect",
       "a_4": "tense",
-      "right_a": "destroy"
+      "right_a": "trial"
     },
     {
       "title": "fright",
@@ -526,9 +566,9 @@
       "title": "create",
       "a_1": "trial",
       "a_2": "noise",
-      "a_3": "effect",
+      "a_3": "make",
       "a_4": "No right answer",
-      "right_a": "effect"
+      "right_a": "make"
     },
     {
       "title": "scream",
@@ -880,11 +920,11 @@
     },
     {
       "title": "This film is worth the money! <br> I _______ this film!",
-      "a_1": "will visit",
+      "a_1": "am gonna visit",
       "a_2": "are visit",
       "a_3": "will visit",
       "a_4": "No right answer",
-      "right_a": "will visit"
+      "right_a": "am gonna visit"
     },
     {
       "title": "Lionel Messi _______ for Real Madrid this season.",
@@ -1176,7 +1216,7 @@
     },
     {
       "title": "tremble",
-      "a_1": "shake",
+      "a_1": "act",
       "a_2": "expanded",
       "a_3": "walk",
       "a_4": "shake",
@@ -1245,6 +1285,648 @@
       "a_3": "go away",
       "a_4": "No right answer",
       "right_a": "bye"
+    }
+  ],
+  "level5": [
+    {
+      "title": "I ___________ about a yellow unicorn last night.",
+      "a_1": "dreamed",
+      "a_2": "slept",
+      "a_3": "dreaming",
+      "a_4": "No right answer",
+      "right_a": "dreamed"
+    },
+    {
+      "title": "Anna ___________ to class yesterday because she was at the hospital.",
+      "a_1": "didn't came",
+      "a_2": "didn't comed",
+      "a_3": "didn't arrive",
+      "a_4": "didn't come",
+      "right_a": "didn't come"
+    },
+    {
+      "title": "It was snowing last night. It ___________ so cold!",
+      "a_1": "touched",
+      "a_2": "felt",
+      "a_3": "happened",
+      "a_4": "No right answer",
+      "right_a": "felt"
+    },
+    {
+      "title": "Lucy ___________ her mother's watch, so she bought a new one.",
+      "a_1": "forgot",
+      "a_2": "crashed",
+      "a_3": "broke",
+      "a_4": "No right answer",
+      "right_a": "broke"
+    },
+    {
+      "title": "We ___________ at the library for three hours yesterday.",
+      "a_1": "learnt",
+      "a_2": "studied",
+      "a_3": "reviewed",
+      "a_4": "No right answer",
+      "right_a": "studied"
+    },
+    {
+      "title": "I ___________ an e-mail to the company but they never answered.",
+      "a_1": "send",
+      "a_2": "published",
+      "a_3": "read",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "The two cousins ___________ at the airport for the first time.",
+      "a_1": "meeted",
+      "a_2": "welcomed",
+      "a_3": "saw",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "The dog ___________ in the middle of the kitchen floor, looking at the door.",
+      "a_1": "put",
+      "a_2": "ran",
+      "a_3": "stood",
+      "a_4": "No right answer",
+      "right_a": "stood"
+    },
+    {
+      "title": "Last night the game ______ 10 minutes late.",
+      "a_1": "beginned",
+      "a_2": "begin",
+      "a_3": "began",
+      "a_4": "No right answer",
+      "right_a": "began"
+    },
+    {
+      "title": "The dog ______ his finger.",
+      "a_1": "bit",
+      "a_2": "bite",
+      "a_3": "bited",
+      "a_4": "No right answer",
+      "right_a": "bit"
+    },
+    {
+      "title": "The teacher ______ a note to Nina's parents.",
+      "a_1": "writed",
+      "a_2": "write",
+      "a_3": "written",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "They ______ what the student said in class yesterday.",
+      "a_1": "understand",
+      "a_2": "understandded",
+      "a_3": "understanded",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "He _____ the ball at me.",
+      "a_1": "throwed",
+      "a_2": "threw",
+      "a_3": "throw",
+      "a_4": "No right answer",
+      "right_a": "threw"
+    },
+    {
+      "title": "The strong wind ______ off her hat.",
+      "a_1": "blew",
+      "a_2": "blown",
+      "a_3": "blowed",
+      "a_4": "No right answer",
+      "right_a": "blew"
+    },
+    {
+      "title": "Maria ______ her phone last week.",
+      "a_1": "broked",
+      "a_2": "breaked",
+      "a_3": "broke",
+      "a_4": "No right answer",
+      "right_a": "broke"
+    },
+    {
+      "title": "I ______ David was sick, but he was on vacation.",
+      "a_1": "thought",
+      "a_2": "thinked",
+      "a_3": "think",
+      "a_4": "No right answer",
+      "right_a": "thought"
+    },
+    {
+      "title": "We ______ our new home quickly.",
+      "a_1": "built",
+      "a_2": "builded",
+      "a_3": "builted",
+      "a_4": "No right answer",
+      "right_a": "built"
+    },
+    {
+      "title": "Bob _____ Helen the secret.",
+      "a_1": "tell",
+      "a_2": "telled",
+      "a_3": "tailed",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "Mozart ___________ more than 600 pieces of music.\n",
+      "a_1": "writes",
+      "a_2": "wrote",
+      "a_3": "writed",
+      "a_4": "was wrote",
+      "right_a": "did"
+    },
+    {
+      "title": "We _______ David in town a few days ago.",
+      "a_1": "did see",
+      "a_2": "was saw",
+      "a_3": "did saw",
+      "a_4": "saw",
+      "right_a": "saw"
+    },
+    {
+      "title": "It was cold, so I _____________ the window.",
+      "a_1": "shut",
+      "a_2": "was shut",
+      "a_3": "am shut",
+      "a_4": "shutted",
+      "right_a": "shut"
+    },
+    {
+      "title": "I ___________ to the cinema three times last week.",
+      "a_1": "was go",
+      "a_2": "went",
+      "a_3": "did go",
+      "a_4": "No right answer",
+      "right_a": "went"
+    },
+    {
+      "title": "What __________ you _________ last weekend?",
+      "a_1": "were / do",
+      "a_2": "did / did",
+      "a_3": "did / do",
+      "a_4": "do / did",
+      "right_a": "did / do"
+    },
+    {
+      "title": "The police ___________ me on my way home last night.",
+      "a_1": "was stop",
+      "a_2": "stopped",
+      "a_3": "stops",
+      "a_4": "stopping",
+      "right_a": "stopped"
+    },
+    {
+      "title": "The film wasn't very good. I _____________ it very much.",
+      "a_1": "enjoyed",
+      "a_2": "wasn't enjoy",
+      "a_3": "didn't enjoyed",
+      "a_4": "didn't enjoy",
+      "right_a": "didn't enjoy"
+    },
+    {
+      "title": "The bed was very uncomfortable. I ____________ sleep very well.",
+      "a_1": "didn't",
+      "a_2": "did",
+      "a_3": "wasn't",
+      "a_4": "No right answer",
+      "right_a": "didn't"
+    },
+    {
+      "title": "The window was open and a bird ___________ into the room.",
+      "a_1": "fly",
+      "a_2": "flew",
+      "a_3": "was flew",
+      "a_4": "did fly",
+      "right_a": "flew"
+    },
+    {
+      "title": "I __________ a lot of money yesterday. I __________ an expensive dress.",
+      "a_1": "spend / buy",
+      "a_2": "spent / buy",
+      "a_3": "spent / bought",
+      "a_4": "No right answer",
+      "right_a": "spent / bought"
+    },
+    {
+      "title": "She ________ in Florida but prefers California.",
+      "a_1": "lives",
+      "a_2": "goes",
+      "a_3": "lived",
+      "a_4": "No right answer",
+      "right_a": "lives"
+    },
+    {
+      "title": "When we ________ on vacation, we never fly.",
+      "a_1": "are",
+      "a_2": "go",
+      "a_3": "went",
+      "a_4": "No right answer",
+      "right_a": "go"
+    },
+    {
+      "title": "I ________ four languages, but I love Italian above all.",
+      "a_1": "spoke",
+      "a_2": "speak",
+      "a_3": "speaks",
+      "a_4": "spoken",
+      "right_a": "speak"
+    },
+    {
+      "title": "That dog always ________ with his head against the wall.",
+      "a_1": "sleepes",
+      "a_2": "sleeping",
+      "a_3": "sleeped",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "We don't ________ which airport the plane goes from.",
+      "a_1": "know",
+      "a_2": "knew",
+      "a_3": "knowing",
+      "a_4": "No right answer",
+      "right_a": "know"
+    },
+    {
+      "title": "My girlfriend ________ her eyes when there's a horror movie on TV.",
+      "a_1": "open",
+      "a_2": "shut",
+      "a_3": "clossed",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "Kathy always ________ about the boss. She hates her job!",
+      "a_1": "says",
+      "a_2": "complained",
+      "a_3": "complains",
+      "a_4": "No right answer",
+      "right_a": "complains"
+    },
+    {
+      "title": "She ________ to disco music, only tango.",
+      "a_1": "didn't dance",
+      "a_2": "don't dance",
+      "a_3": "doesn't dance",
+      "a_4": "hasn't dance",
+      "right_a": "doesn't dance"
+    },
+    {
+      "title": "I am _______ a sandwich now.",
+      "a_1": "eats",
+      "a_2": "eating",
+      "a_3": "not eat",
+      "a_4": "eat",
+      "right_a": "eating"
+    },
+    {
+      "title": "I am busy right now. I _______ breakfast.",
+      "a_1": "am have",
+      "a_2": "have",
+      "a_3": "having",
+      "a_4": "am having",
+      "right_a": "am having"
+    },
+    {
+      "title": "My daughter _________ studying English at Istanbul University.",
+      "a_1": "is",
+      "a_2": "does",
+      "a_3": "do",
+      "a_4": "No right answer",
+      "right_a": "is"
+    },
+    {
+      "title": "_____ you waiting for a bus?",
+      "a_1": "do",
+      "a_2": "are",
+      "a_3": "does",
+      "a_4": "is",
+      "right_a": "are"
+    },
+    {
+      "title": "What _____________? It looks awful.",
+      "a_1": "do you drinking",
+      "a_2": "are you drink",
+      "a_3": "are you drinking",
+      "a_4": "does you drink",
+      "right_a": "are you drinking"
+    },
+    {
+      "title": "We ________ enjoying our holiday here so much.",
+      "a_1": "don't",
+      "a_2": "are",
+      "a_3": "is",
+      "a_4": "No right answer",
+      "right_a": "are"
+    },
+    {
+      "title": "What _____ John ___________ at the moment?",
+      "a_1": "does / do",
+      "a_2": "is / do",
+      "a_3": "are / doing",
+      "a_4": "No right answer",
+      "right_a": "No right answer"
+    },
+    {
+      "title": "I ___________ sitting down at the moment.",
+      "a_1": "am not",
+      "a_2": "are not",
+      "a_3": "is",
+      "a_4": "don't",
+      "right_a": "don't"
+    },
+    {
+      "title": "Don't disturb him. He __________.",
+      "a_1": "sleeps",
+      "a_2": "is sleeping",
+      "a_3": "is sleep",
+      "a_4": "sleep",
+      "right_a": "is sleeping"
+    },
+    {
+      "title": "They are ___________ their coats..",
+      "a_1": "not",
+      "a_2": "put on",
+      "a_3": "putting on",
+      "a_4": "doesn't put",
+      "right_a": "putting on"
+    },
+    {
+      "title": "____________________ shoes here are black",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "These"
+    },
+    {
+      "title": "____________________ shoes there are gray",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "Those"
+    },
+    {
+      "title": "____________________ pen here is small",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "This"
+    },
+    {
+      "title": "____________________ pen there is very large",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "That"
+    },
+    {
+      "title": "The time on ____________________ clock over there is 5:00",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "That"
+    },
+    {
+      "title": "The time on ____________________ clock on my hand is 11:50",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "This"
+    },
+    {
+      "title": "Look at ______ man over there! He's not wearing any clothes!",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "That"
+    },
+    {
+      "title": "Her new house cost over half a million pounds. ______ a lot of money.",
+      "a_1": "This's",
+      "a_2": "That's",
+      "a_3": "These're",
+      "a_4": "Those're",
+      "right_a": "That's"
+    },
+    {
+      "title": "Hello. ______ Patrick. Can I speak to Murray, please?",
+      "a_1": "This is",
+      "a_2": "That is",
+      "a_3": "These are",
+      "a_4": "Those are",
+      "right_a": "This is"
+    },
+    {
+      "title": "______ boots she is wearing look very expensive.",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "These"
+    },
+    {
+      "title": "My grandmother never wore trousers when she was young. In ______ days it wasn't acceptable.",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "Those"
+    },
+    {
+      "title": "I'm going to London again ______ week-end. Do you want to come?",
+      "a_1": "This",
+      "a_2": "That",
+      "a_3": "These",
+      "a_4": "Those",
+      "right_a": "This"
+    },
+    {
+      "title": "Yes, let's go to the restaurant tonight. _______ a great idea.",
+      "a_1": "This is",
+      "a_2": "That is",
+      "a_3": "These are",
+      "a_4": "Those are",
+      "right_a": "That is"
+    },
+    {
+      "title": "We’re going to have a picnic ________ Saturday afternoon. Would you like to come?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "on"
+    },
+    {
+      "title": "I’ll be finished my work ________ an hour. Then, I can go home.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "in"
+    },
+    {
+      "title": "When is the meeting? Is it ________ 2:00?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "at"
+    },
+    {
+      "title": "I like to get up really early, ________ sunrise, when the birds start to sing.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "at"
+    },
+    {
+      "title": "Tom’s birthday is next week, ________ January 14.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "on"
+    },
+    {
+      "title": "My grandfather was born ________ the 1950s.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "in"
+    },
+    {
+      "title": "Will we be ________ time, or will we miss our flight?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "on"
+    },
+    {
+      "title": "My family and I like to ski ________ winter. ",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "in"
+    },
+    {
+      "title": "Are there any holidays ________ October?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "in"
+    },
+    {
+      "title": "Our school cafeteria opens for lunch ________ noon.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "at"
+    },
+    {
+      "title": "What time does your son go to bed ________ night?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "at"
+    },
+    {
+      "title": "We moved to this city ________ 2012.",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "in"
+    },
+    {
+      "title": "Are you going to do anything special ________ your birthday?",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "on"
+    },
+    {
+      "title": "I’m not going to watch that TV show. It starts ________ midnight!",
+      "a_1": "in",
+      "a_2": "on",
+      "a_3": "at",
+      "a_4": "by",
+      "right_a": "at"
+    },
+    {
+      "title": "Excuse me. This phone is __________. You forgot to take it with you.",
+      "a_1": "your",
+      "a_2": "yours",
+      "a_3": "mine",
+      "a_4": "my",
+      "right_a": "yours"
+    },
+    {
+      "title": "Ana and Elsa like _______ new teacher.",
+      "a_1": "their",
+      "a_2": "hers",
+      "a_3": "theirs",
+      "a_4": "her",
+      "right_a": "their"
+    },
+    {
+      "title": "Do you think your father likes _____birthday present?",
+      "a_1": "my",
+      "a_2": "your",
+      "a_3": "his",
+      "a_4": "our",
+      "right_a": "his"
+    },
+    {
+      "title": "Brazil is located in South America. _______ capital city is Brasilia.",
+      "a_1": "their",
+      "a_2": "theirs",
+      "a_3": "its",
+      "a_4": "it",
+      "right_a": "its"
+    },
+    {
+      "title": "This is ________ - you ordered the pizza. I ordered the spaghetti.",
+      "a_1": "mine",
+      "a_2": "my",
+      "a_3": "your",
+      "a_4": "yours",
+      "right_a": "yours"
+    },
+    {
+      "title": "Did the cat eat all of _______ food?",
+      "a_1": "her",
+      "a_2": "his",
+      "a_3": "its",
+      "a_4": "it",
+      "right_a": "its"
+    },
+    {
+      "title": "Did the child eat all of _______ food?",
+      "a_1": "her",
+      "a_2": "his",
+      "a_3": "its",
+      "a_4": "it",
+      "right_a": "his"
     }
   ]
 }

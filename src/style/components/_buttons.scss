@@ -28,6 +28,15 @@
     text-align: left;
   }
 
+  .questions-count {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba($main_color, 0.2);
+    padding-bottom: 3px;
+  }
+
   .box {
     position: relative;
     display: inline-flex;

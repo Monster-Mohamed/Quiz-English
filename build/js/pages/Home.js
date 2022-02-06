@@ -1,22 +1,36 @@
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
 import Levels from "./Levels.js";
-const Home = () => {
+const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     const dad = document.getElementById("root");
     let levels = "";
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 5; i++) {
         const progress = window.localStorage.getItem(`progress${i}`);
         const check = !!progress;
-        levels +=
-            `
-            <div data-level="${i}" class="main-btn levels">
+        yield fetch(`https://monster-quiz-english-default-rtdb.firebaseio.com/level${i}.json`)
+            .then(res => res.json())
+            .then(data => {
+            let count = data.length;
+            levels +=
+                `
+            <div ${i === 5 && "data-disable='true'"} data-level="${i}" class="main-btn levels">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <p class="txt">Level ${i}</p>
+                <p class="questions-count">Questions: ${count}</p>
                 <div class="box">
                      ${check && +progress === 100
-                ? "<img alt='completed' class='completed' src='https://cdn-icons-png.flaticon.com/128/716/716225.png' >"
-                : `
+                    ? "<img alt='completed' class='completed' src='../../images/checked.png' >"
+                    : `
                         <div class="percent">
                             <svg>
                                 <circle cx="70" cy="70" r="70"></circle>
@@ -31,6 +45,7 @@ const Home = () => {
                 </div>
             </div>
             `;
+        });
     }
     dad.innerHTML = `
     <div class="parent-center">
@@ -53,6 +68,6 @@ const Home = () => {
         reset && window.localStorage.clear();
         Home();
     });
-};
+});
 export default Home;
 //# sourceMappingURL=Home.js.map

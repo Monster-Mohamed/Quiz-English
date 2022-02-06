@@ -21,7 +21,10 @@ const NextQuestion = (questions) => {
         checkAnswers(rightAnswer);
         // make countdown
         clearInterval(counter);
-        if (+Level > 1) {
+        if (+Level > 4) {
+            CountDown(30);
+        }
+        else if (+Level > 1) {
             CountDown(60);
         }
         else {
@@ -99,7 +102,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Good"
-                            src="https://cdn-icons-png.flaticon.com/128/716/716225.png">
+                            src="../../images/checked.png">
                    </div>
                     `;
             }
@@ -112,7 +115,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Perfect"
-                             src="https://cdn-icons.flaticon.com/png/512/4401/premium/4401379.png?token=exp=1643578968~hmac=6faec1acbe8dafffa2e9a8f64c340135">
+                             src="../../images/excellence.png">
                    </div>
                     `;
             }
@@ -125,7 +128,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Bad"
-                             src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png">
+                             src="../../images/cancel.png">
                    </div>
                     `;
             }

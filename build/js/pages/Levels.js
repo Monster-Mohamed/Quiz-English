@@ -30,7 +30,10 @@ const Levels = (level) => {
         AddQuestions(data[curr]);
         // Start Countdown
         clearInterval(counter);
-        if (+Level > 1) {
+        if (+Level > 4) {
+            CountDown(30);
+        }
+        else if (+Level > 1) {
             CountDown(60);
         }
         else {
