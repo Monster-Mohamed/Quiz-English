@@ -42,12 +42,17 @@ const QuizTemplate = (level) => {
             window.localStorage.setItem(`progress${Level}`, result.toString());
             // to reset variables
             resetAllVariables();
-            console.log(rightAnswers);
             // to add home page
             Home();
         }
         else {
-            alert("You can't exit at first question");
+            // @ts-ignore
+            cuteToast({
+                type: "warning",
+                message: "You can't exit at the first question",
+                img: "img/warning.svg",
+                timer: 5000
+            });
         }
     });
 };

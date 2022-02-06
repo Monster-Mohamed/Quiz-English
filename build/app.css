@@ -461,14 +461,14 @@ input[data-correct] + label {
 }
 .quiz-parent .bullets .spans span.goodChoose {
   background-color: unset;
-  background-image: url(https://cdn-icons-png.flaticon.com/128/463/463574.png) !important;
+  background-image: url(images/checked.png) !important;
   background-size: cover;
   background-position: center;
   padding: 0;
 }
 .quiz-parent .bullets .spans span.badChoose {
   background-color: unset;
-  background-image: url(https://cdn-icons-png.flaticon.com/512/1828/1828843.png) !important;
+  background-image: url(images/cancel.png) !important;
   background-size: cover;
   background-position: center;
   padding: 0;

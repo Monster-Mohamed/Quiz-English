@@ -64,9 +64,28 @@ const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     });
     const resetBtn = document.querySelector(".reset-btn");
     resetBtn.addEventListener("click", () => {
-        const reset = confirm("Are you sure? \n You want to reset all the progress of quizzes");
-        reset && window.localStorage.clear();
-        Home();
+        // @ts-ignore
+        cuteAlert({
+            type: "question",
+            title: "Are you sure?",
+            message: "You want to reset all the progress of quizzes",
+            img: "img/question.svg",
+            confirmText: "Reset all",
+            cancelText: "Cancel"
+        }).then((e) => {
+            if (e == ("confirm")) {
+                // if the user is confirmed
+                window.localStorage.clear();
+                Home();
+                // @ts-ignore
+                cuteToast({
+                    type: "success",
+                    message: "The progresses of all levels reset successfully",
+                    img: "img/success.svg",
+                    timer: 5000
+                });
+            }
+        });
     });
 });
 export default Home;
