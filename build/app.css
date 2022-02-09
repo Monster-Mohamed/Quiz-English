@@ -6,6 +6,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 *,
@@ -43,10 +44,31 @@ input[data-correct] + label {
   cursor: not-allowed !important;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .buttons-grandfather {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.close:hover {
+  transform: rotate(360deg);
+  color: black;
 }
 
 .what {
@@ -301,15 +323,19 @@ input[data-correct] + label {
     transform: translateY(-0.1em);
   }
 }
-.reset-btn {
+.reset-btn, .chapters-btn {
   color: #ba181b;
   width: max-content;
   margin-left: 25px;
   cursor: pointer;
 }
 
-.reset-btn:hover {
+.reset-btn:hover, .chapters-btn:hover {
   border-bottom: 1px solid #ba181b;
+}
+
+.chapters-btn {
+  margin-top: 10px;
 }
 
 .head1 {
@@ -505,27 +531,13 @@ input[data-correct] + label {
 .counter {
   height: max-content;
   padding: 33px 20px;
-  background: #779ecb;
+  background: #656667;
   color: white;
   font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
-}
-
-.close {
-  position: absolute;
-  top: 5px;
-  right: 30px;
-  font-size: 22px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.6) !important;
-}
-
-.close:hover {
-  transform: rotate(360deg);
-  color: white;
 }
 
 ::-webkit-scrollbar {
@@ -552,6 +564,85 @@ html {
   scrollbar-color: #ba181b #3d4a59;
 }
 
+#chapters {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5000;
+}
+#chapters .chapters-container {
+  transform: scale(0);
+  transition: 1s;
+  width: 50vw;
+  background: white;
+  border-radius: 11px;
+  border: 1px solid #ba181b;
+}
+#chapters .chapters-container .chapters-list-parent {
+  padding: 10px 20px;
+  height: 500px;
+  overflow: auto;
+}
+#chapters .chapters-container .chapters-list-parent .chapter-card {
+  display: flex;
+  border-radius: 11px;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(186, 24, 27, 0.1);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(101, 102, 103, 0.1);
+  position: relative;
+}
+#chapters .chapters-container .chapters-list-parent .chapter-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 45%;
+}
+#chapters .chapters-container .chapters-list-parent .chapter-card h3 {
+  color: #ba181b;
+  font-weight: 700;
+}
+#chapters .chapters-container .chapters-list-parent .chapter-card .word {
+  font-size: 14px;
+  color: #ba181b;
+}
+#chapters .chapters-container h2 {
+  text-align: center;
+  padding: 15px 0;
+  color: #ba181b;
+}
+#chapters .chapters-empty {
+  display: block;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#chapters .empty-text {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 225;
+}
+#chapters .chapter-scale {
+  transform: scale(1);
+}
+
+.completed-color {
+  color: #2dd284 !important;
+}
+
+.notCompleted-color {
+  color: #d85261 !important;
+}
+
 .completed {
   width: 100px;
   height: 100px;
@@ -562,7 +653,11 @@ html {
     font-size: 35px;
   }
 }
-@media (max-width: 933px) {
+@media (max-width: 970px) {
+  .chapters-container {
+    width: 75vw !important;
+  }
+
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
@@ -584,6 +679,10 @@ html {
   }
 }
 @media (max-width: 555px) {
+  .chapters-container {
+    width: 90vw !important;
+  }
+
   .bullets {
     flex-direction: column;
   }
@@ -643,6 +742,15 @@ html {
   }
 }
 @media (max-width: 370px) {
+  .chapters-container {
+    width: 95vw !important;
+  }
+  .chapters-container .chapter-card {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
   .head1 {
     word-break: break-word;
   }

@@ -4,7 +4,10 @@
   }
 }
 
-@media (max-width: 933px) {
+@media (max-width: 970px) {
+  .chapters-container {
+    width: 75vw !important;
+  }
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
@@ -29,6 +32,9 @@
 }
 
 @media (max-width: 555px) {
+  .chapters-container {
+    width: 90vw !important;
+  }
   .bullets {
     flex-direction: column;
 
@@ -94,6 +100,16 @@
 }
 
 @media (max-width: 370px) {
+  .chapters-container {
+    width: 95vw !important;
+
+    .chapter-card {
+      flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
   .head1 {
     word-break: break-word;
   }

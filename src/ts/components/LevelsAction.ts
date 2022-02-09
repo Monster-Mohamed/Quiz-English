@@ -1,5 +1,5 @@
 import Levels from "../pages/Levels.js";
-import {timer} from "./NextChapter.js";
+import {timer} from "./Counters/Counter.js";
 
 const LevelsAction = () => {
     const levelsButtons = document.querySelectorAll(".levels") as NodeListOf<HTMLButtonElement>;

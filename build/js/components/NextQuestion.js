@@ -1,7 +1,7 @@
 import { curr, increaseCurrPageBy1, Level, questionsCount, resetAllVariables } from "../pages/Levels.js";
 import AddQuestions from "./AddQuestions.js";
 import RemoveAll from "./RemoveAll.js";
-import { CountDownQuiz, counter } from "./CountDown.js";
+import { CountDownQuiz, counter } from "./Counters/CountDown.js";
 import Home from "../pages/Home.js";
 export let rightAnswers = 0;
 export const resetRightAnswers = () => {

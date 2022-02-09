@@ -7,14 +7,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import NextChapter, { CHAPTER } from "../components/NextChapter.js";
 import ShowButtons from "../components/ShowButtons.js";
 import LevelsAction from "../components/LevelsAction.js";
 import HomeTemplate from "../components/HomeTemplate.js";
 import ResetLevels from "../components/ResetLevels.js";
 import MoreInfoButton from "../components/MoreInfoButton.js";
+import Counter from "../components/Counters/Counter.js";
 // the end time for the countdown timer
-document.querySelector("title").innerText += CHAPTER;
 const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     // the root element [ dad ]
     const dad = document.getElementById("root");
@@ -23,7 +22,7 @@ const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     // Home Template (first thing in home page)
     HomeTemplate(dad);
     // for the counter
-    NextChapter(dad);
+    Counter(dad, "We will go to the next chapter after");
     // levels buttons
     LevelsAction();
     // more button

@@ -9,15 +9,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import LevelAvailable from "./LevelAvailable.js";
 export let levels = "";
+export const LEVELSCOUNT = 4;
 const ShowButtons = () => __awaiter(void 0, void 0, void 0, function* () {
     levels = "";
-    for (let i = 1; i <= 5; i++) {
-        const progress = window.localStorage.getItem(`progress${i}`);
+    for (let i = 1; i <= LEVELSCOUNT; i++) {
+        const progress = localStorage.getItem(`progress${i}`);
         const check = !!progress;
         yield fetch(`https://monster-quiz-english-default-rtdb.firebaseio.com/level${i}.json`)
             .then(res => res.json())
             .then(data => {
-            let LevelIsNotAvailable = i > 4 ? !LevelAvailable(i) : false;
+            let LevelIsNotAvailable = i > 2 ? !LevelAvailable(i) : false;
             let count = data.length;
             levels +=
                 `
@@ -35,7 +36,7 @@ const ShowButtons = () => __awaiter(void 0, void 0, void 0, function* () {
                     <p class="questions-count">Questions: ${count}</p>
                     <div class="box">
                          ${check && +progress === 100
-                    ? "<img alt='completed' class='completed' src='../../images/checked.png' >"
+                    ? "<img alt='completed' class='completed' src='images/checked.png' >"
                     : `
                             <div class="percent">
                                 <svg>
@@ -45,7 +46,7 @@ const ShowButtons = () => __awaiter(void 0, void 0, void 0, function* () {
                                 </svg>
                                 <div class="number">
                                     ${LevelIsNotAvailable
-                        ? "<img class='locked' alt='Locked' src=\"https://cdn-icons.flaticon.com/png/512/3541/premium/3541938.png?token=exp=1644395798~hmac=5740ecdaab69c949a564db5093dbe202\"/>"
+                        ? "<img class='locked' alt='Locked' src='images/locked.png'"
                         : check ? "<h2>" + progress + "<p>%<p/> </h2>" : "<h2>0.0<p>%<p/></h2>"}
                                 </div>
                             </div>

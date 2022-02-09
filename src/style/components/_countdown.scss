@@ -11,17 +11,3 @@
   justify-content: center;
   margin: 0;
 }
-
-.close {
-  position: absolute;
-  top: 5px;
-  right: 30px;
-  font-size: 22px;
-  cursor: pointer;
-  color: rgba(white, 0.6) !important;
-}
-
-.close:hover {
-  transform: rotate(360deg);
-  color: white;
-}

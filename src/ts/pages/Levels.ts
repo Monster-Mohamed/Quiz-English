@@ -2,7 +2,7 @@ import createBullets from "../components/CreateBullets.js";
 import QuizTemplate from "../components/QuizTemplate.js";
 import AddQuestions from "../components/AddQuestions.js";
 import NextQuestion, {resetRightAnswers} from "../components/NextQuestion.js";
-import {CountDownQuiz, counter} from "../components/CountDown.js";
+import {CountDownQuiz, counter} from "../components/Counters/CountDown.js";
 
 export let questionsCount: string;
 export let curr = 0;

@@ -8,8 +8,22 @@
 }
 
 
+.close {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  font-size: 22px;
+  cursor: pointer;
+  color: rgba(black, 0.6) !important;
+}
+
+.close:hover {
+  transform: rotate(360deg);
+  color: black;
+}
+
 .what {
-  color: #656667;
+  color: $sec_color;
   font-size: 20px;
   position: absolute;
   right: 25px;
@@ -228,11 +242,11 @@
 .main-btn[data-disable] {
   cursor: not-allowed;
   opacity: 0.8;
-  border: 2px solid #656667;
-  background: rgba(#656667, 0.2) !important;
+  border: 2px solid $sec_color;
+  background: rgba($sec_color, 0.2) !important;
 
   &:hover {
-    background: rgba(#656667, 0.3) !important;
+    background: rgba($sec_color, 0.3) !important;
 
     span {
       display: none;
@@ -306,4 +320,9 @@
 
 .reset-btn:hover {
   border-bottom: 1px solid $main_color;
+}
+
+.chapters-btn {
+  @extend .reset-btn;
+  margin-top: 10px;
 }

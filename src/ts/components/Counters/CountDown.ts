@@ -1,4 +1,4 @@
-import {curr, questionsCount} from "../pages/Levels.js";
+import {curr, questionsCount} from "../../pages/Levels.js";
 
 export let counter: any;
 export const CountDownQuiz = (duration: number) => {

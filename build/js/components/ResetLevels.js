@@ -1,4 +1,5 @@
 import Home from "../pages/Home.js";
+import ClearAllLevels from "./ClearAllLevels.js";
 const ResetLevels = () => {
     const resetBtn = document.querySelector(".reset-btn");
     resetBtn.addEventListener("click", () => {
@@ -13,7 +14,7 @@ const ResetLevels = () => {
         }).then((e) => {
             if (e == ("confirm")) {
                 // if the user is confirmed
-                localStorage.clear();
+                ClearAllLevels();
                 Home();
                 // @ts-ignore
                 cuteToast({
