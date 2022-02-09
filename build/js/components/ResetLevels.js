@@ -1,5 +1,6 @@
 import Home from "../pages/Home.js";
 import ClearAllLevels from "./ClearAllLevels.js";
+import { timer } from "./Counters/Counter.js";
 const ResetLevels = () => {
     const resetBtn = document.querySelector(".reset-btn");
     resetBtn.addEventListener("click", () => {
@@ -16,6 +17,7 @@ const ResetLevels = () => {
                 // if the user is confirmed
                 ClearAllLevels();
                 Home();
+                clearInterval(timer);
                 // @ts-ignore
                 cuteToast({
                     type: "success",
