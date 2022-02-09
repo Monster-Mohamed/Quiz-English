@@ -1,7 +1,7 @@
 import { curr, increaseCurrPageBy1, Level, questionsCount, resetAllVariables } from "../pages/Levels.js";
 import AddQuestions from "./AddQuestions.js";
 import RemoveAll from "./RemoveAll.js";
-import CountDown, { counter } from "./CountDown.js";
+import { CountDownQuiz, counter } from "./CountDown.js";
 import Home from "../pages/Home.js";
 export let rightAnswers = 0;
 export const resetRightAnswers = () => {
@@ -19,16 +19,16 @@ const NextQuestion = (questions) => {
         increaseCurrPageBy1();
         // check the answer
         checkAnswers(rightAnswer);
-        // make countdown
+        // make CountDownQuiz
         clearInterval(counter);
         if (+Level > 4) {
-            CountDown(30);
+            CountDownQuiz(30);
         }
         else if (+Level > 1) {
-            CountDown(60);
+            CountDownQuiz(60);
         }
         else {
-            CountDown(90);
+            CountDownQuiz(90);
         }
         // show results
         showResults();

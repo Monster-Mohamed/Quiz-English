@@ -1,7 +1,7 @@
 import {curr, questionsCount} from "../pages/Levels.js";
 
 export let counter: any;
-const CountDown = (duration: number) => {
+export const CountDownQuiz = (duration: number) => {
     if (curr < +questionsCount) {
         let min, sec;
         const countdownEle = document.querySelector(".count-down")!;
@@ -19,5 +19,26 @@ const CountDown = (duration: number) => {
         }, 1000);
     }
 };
+export const Countdown = (endDate: string) => {
+    let countdown = new Date(endDate).getTime();
+    let now = new Date().getTime();
+    let dateDiff = countdown - now;
+    let isEnd = false;
 
-export default CountDown;
+    if (dateDiff <= 0) {
+        isEnd = true;
+    }
+    // get time units
+    let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let min = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+    let sec = Math.floor((dateDiff % (1000 * 60)) / 1000);
+
+    return {
+        days,
+        hours,
+        min,
+        sec,
+        isEnd,
+    };
+};

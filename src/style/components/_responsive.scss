@@ -1,4 +1,10 @@
-@media (max-width: 905px) {
+@media (max-width: 1100px) {
+  .head1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 933px) {
   .msg {
     padding: 10px !important;
     flex-wrap: wrap;
@@ -13,6 +19,12 @@
     .levels {
       padding: 35px !important;
     }
+  }
+}
+
+@media (max-width: 630px) {
+  .head1 {
+    font-size: 30px;
   }
 }
 
@@ -52,6 +64,15 @@
   }
 }
 
+@media (max-width: 450px) {
+  .counter {
+    font-size: 16px;
+  }
+  .head1 {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 425px) {
   .main-btn {
     flex-direction: column;
@@ -72,11 +93,16 @@
   }
 }
 
-@media (max-width: 285px) {
-  h1 {
-    font-size: 20px;
+@media (max-width: 370px) {
+  .head1 {
+    word-break: break-word;
   }
+}
 
+@media (max-width: 285px) {
+  .head1 {
+    font-size: 18px !important;
+  }
   .levels {
     padding: 5px !important;
   }

@@ -1,6 +1,22 @@
 @use "../helpers/var" as *;
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+.buttons-grandfather {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.what {
+  color: #656667;
+  font-size: 20px;
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  top: -4px;
+}
+
 .main-btn {
   position: relative;
   cursor: pointer;
@@ -88,6 +104,11 @@
         justify-content: center;
         align-items: center;
         color: #111;
+
+        .locked {
+          width: 100%;
+          height: 100%;
+        }
 
         h2 {
           font-size: 34px;
@@ -203,8 +224,20 @@
   }
 }
 
+
 .main-btn[data-disable] {
   cursor: not-allowed;
+  opacity: 0.8;
+  border: 2px solid #656667;
+  background: rgba(#656667, 0.2) !important;
+
+  &:hover {
+    background: rgba(#656667, 0.3) !important;
+
+    span {
+      display: none;
+    }
+  }
 }
 
 .submit-btn {
