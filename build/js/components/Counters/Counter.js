@@ -40,11 +40,13 @@ const Counter = (dad, msg) => {
             counter.innerHTML =
                 `
                 <div class="counter">
-                    ${msg} 
-                    ${days !== 0 ? days + " days | " : ""}
-                    ${hours < 10 ? hours !== 0 ? "0" + hours + " hours | " : "" : hours + " hours | "}
-                    ${min < 10 ? min !== 0 ? "0" + min + " minutes |" : "" : min + " minutes | "}
-                    ${sec < 10 ? "0" + sec : sec} seconds 
+                    <p  title="what is the chapters?" class="text">
+                        ${msg} 
+                        ${days !== 0 ? days + " days | " : ""}
+                        ${hours < 10 ? hours !== 0 ? "0" + hours + " hours | " : "" : hours + " hours | "}
+                        ${min < 10 ? min !== 0 ? "0" + min + " minutes |" : "" : min + " minutes | "}
+                        ${sec < 10 ? "0" + sec : sec} seconds 
+                    </p>
                     <span class="close">x</span>
                 </div>
                 `;
@@ -52,6 +54,18 @@ const Counter = (dad, msg) => {
             close.addEventListener("click", () => {
                 dad.querySelector(".counter").remove();
                 clearInterval(timer);
+            });
+            const counterEle = document.querySelector(".counter .text");
+            counterEle.addEventListener("click", () => {
+                // @ts-ignore
+                cuteAlert({
+                    type: "info",
+                    title: "Chapters",
+                    message: `You must complete all levels to get full mark  for this chapter before the next chapter <br>
+                        The next chapter will be harder and newer questions`,
+                    img: "img/question.svg",
+                    buttonText: "Understood"
+                });
             });
         };
         // before timer
