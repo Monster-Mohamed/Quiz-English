@@ -8,6 +8,7 @@ const HomeTemplate = (dad) => {
     <div id="chapters"></div>
     <div class="parent-center">
         <h2 class="head1">English Quizzes Chapter ${CHAPTERFORTITLE}</h2>
+         <button id="theme" class="custom-btn btn-5"><span>Dark Mode</span></button>
         <div class="reset-btn">Reset Progress</div>
         <div class="chapters-btn">Chapters Progress</div>
         ${levels}

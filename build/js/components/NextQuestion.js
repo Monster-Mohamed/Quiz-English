@@ -102,7 +102,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Good"
-                            src="../../images/checked.png">
+                            src="images/checked.png">
                    </div>
                     `;
             }
@@ -115,7 +115,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Perfect"
-                             src="../../images/excellence.png">
+                             src="images/excellence.png">
                    </div>
                     `;
             }
@@ -128,7 +128,7 @@ const NextQuestion = (questions) => {
                             <p class="result">Your result is <strong>${rightAnswers}</strong> from <strong>${questionsCount}</strong></p>
                         </div>
                         <img alt="Bad"
-                             src="../../images/cancel.png">
+                             src="images/cancel.png">
                    </div>
                     `;
             }

@@ -13,6 +13,8 @@ import HomeTemplate from "../components/HomeTemplate.js";
 import ResetLevels from "../components/ResetLevels.js";
 import MoreInfoButton from "../components/MoreInfoButton.js";
 import Counter from "../components/Counters/Counter.js";
+import Theme from "../components/Themes/Theme.js";
+import SetTheme from "../components/Themes/SetTheme.js";
 // the end time for the countdown timer
 const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     // the root element [ dad ]
@@ -21,6 +23,10 @@ const Home = () => __awaiter(void 0, void 0, void 0, function* () {
     yield ShowButtons();
     // Home Template (first thing in home page)
     HomeTemplate(dad);
+    // Theme Mode
+    Theme();
+    // set the theme
+    SetTheme();
     // for the counter
     Counter(dad, "We will go to the next chapter after");
     // levels buttons
