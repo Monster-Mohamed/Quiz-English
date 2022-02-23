@@ -1,7 +1,7 @@
 import LevelAvailable from "./LevelAvailable.js";
 
 export let levels = "";
-export const LEVELSCOUNT = 4;
+export const LEVELSCOUNT = 6;
 const ShowButtons = async () => {
     levels = "";
     for (let i = 1; i <= LEVELSCOUNT; i++) {

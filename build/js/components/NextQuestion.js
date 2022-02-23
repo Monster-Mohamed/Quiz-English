@@ -24,11 +24,8 @@ const NextQuestion = (questions) => {
         if (+Level > 4) {
             CountDownQuiz(30);
         }
-        else if (+Level > 1) {
-            CountDownQuiz(60);
-        }
         else {
-            CountDownQuiz(90);
+            CountDownQuiz(50);
         }
         // show results
         showResults();

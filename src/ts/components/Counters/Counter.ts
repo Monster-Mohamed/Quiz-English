@@ -6,9 +6,9 @@ import CheckChapters from "./CheckChapters.js";
 // if you determined the ended date you can increase the NEXTCHAPTER else uses that will be wrong
 export let NEXTCHAPTER = 2;
 export let CHAPTER = NEXTCHAPTER - 1;
-export let CHAPTERFORTITLE = CHAPTER;
+export let CHAPTERFORTITLE = NEXTCHAPTER;
 // end time
-export let ended = "2/14/2022";
+export let ended = "2/12/2022";
 // the timer
 export let timer = setTimeout(() => {
 }, 1000);

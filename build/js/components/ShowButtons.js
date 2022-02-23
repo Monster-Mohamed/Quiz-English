@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 import LevelAvailable from "./LevelAvailable.js";
 export let levels = "";
-export const LEVELSCOUNT = 4;
+export const LEVELSCOUNT = 6;
 const ShowButtons = () => __awaiter(void 0, void 0, void 0, function* () {
     levels = "";
     for (let i = 1; i <= LEVELSCOUNT; i++) {

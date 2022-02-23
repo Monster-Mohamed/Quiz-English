@@ -3,12 +3,12 @@ import {levels} from "./ShowButtons.js";
 import ChaptersDegrees from "./Chapters/ChaptersDegrees.js";
 
 const HomeTemplate = (dad: HTMLElement) => {
-    document.querySelector("title")!.innerText = `Monster Quizzes | Chapter ${CHAPTERFORTITLE}`;
+    document.querySelector("title")!.innerText = `Monster Tests | Chapter ${CHAPTERFORTITLE}`;
     dad.innerHTML = `
     <div id="counter"></div>
     <div id="chapters"></div>
     <div class="parent-center">
-        <h2 class="head1">English Quizzes Chapter ${CHAPTERFORTITLE}</h2>
+        <h2 class="head1">English Tests Chapter ${CHAPTERFORTITLE}</h2>
          <button id="theme" class="custom-btn btn-5"><span>Dark Mode</span></button>
         <div class="reset-btn">Reset Progress</div>
         <div class="chapters-btn">Chapters Progress</div>

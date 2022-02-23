@@ -36,10 +36,8 @@ const Levels = (level: string) => {
             clearInterval(counter);
             if (+Level > 4) {
                 CountDownQuiz(30);
-            } else if (+Level > 1) {
-                CountDownQuiz(60);
             } else {
-                CountDownQuiz(90);
+                CountDownQuiz(50);
             }
 
             // check right answer

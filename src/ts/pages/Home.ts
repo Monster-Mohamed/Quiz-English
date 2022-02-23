@@ -10,7 +10,6 @@ import SetTheme from "../components/Themes/SetTheme.js";
 // the end time for the countdown timer
 
 const Home = async () => {
-
     // the root element [ dad ]
     const dad = <HTMLElement>document.getElementById("root");
 
