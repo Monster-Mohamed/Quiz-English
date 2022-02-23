@@ -16,9 +16,12 @@
 
 ## The Website
 [Website](https://monster-quiz-english.web.app/)
-[App in my portfolio](https://z-monster.notion.site/Quizz-App-95da007eeb4a4e16afbc6f5a8c05cd72)
-[My Portfolio](https://z-monster.notion.site/ZMonster-Portfolio-dd12852c73ec477a9ba740de03a9acd5)
+<br>
 
+[App in my portfolio](https://z-monster.notion.site/Quizz-App-95da007eeb4a4e16afbc6f5a8c05cd72)
+<br>
+
+[My Portfolio](https://z-monster.notion.site/ZMonster-Portfolio-dd12852c73ec477a9ba740de03a9acd5)
 
 ## About this Project
 <ul>
